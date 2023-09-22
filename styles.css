@@ -1,0 +1,88 @@
+/* Global Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5; /* Light background color */
+    color: #333; /* Text color */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center-align content in the container */
+}
+
+.header {
+    background-color: #0074d9; /* Blue background color for the header */
+    color: #fff; /* White text color for the header */
+    padding: 20px 0; /* Add padding to the header */
+    text-align: center; /* Center-align content in the header */
+}
+
+.logo-container img {
+    width: 100px; /* Adjust the width of your logo as needed */
+}
+
+.headline {
+    margin-top: 10px; /* Add space below the logo */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0074d9; /* Blue button color */
+    color: #fff; /* Button text color */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block; /* Make buttons inline-block to center them */
+    margin: 10px; /* Add margin to space the buttons */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Textarea Styles */
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff; /* White background for textareas */
+    color: #333; /* Text color */
+    border: 1px solid #ccc; /* Light gray border */
+}
+
+/* Output Box Styles */
+.output-container {
+    margin-top: 20px;
+}
+
+.output-box {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #fff; /* White background for output boxes */
+    color: #333; /* Text color */
+    border: 1px solid #ccc; /* Light gray border */
+}
+
+/* Input Styles */
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff; /* White background for input fields */
+    color: #333; /* Text color */
+    border: 1px solid #ccc; /* Light gray border */
+}
+
+/* Label Styles */
+label {
+    color: #333; /* Text color for labels */
+    margin-right: 10px;
+}
