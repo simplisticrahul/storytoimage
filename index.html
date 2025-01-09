@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sentence Separator and Image Generator</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  
-<header class="header">
-        <div class="logo-container">
-            <img src="your-logo.png" alt="Your Logo">
-        </div>
-        <h1 class="headline">Your Headline</h1>
-    </header>
+  <header>
+    <!-- Replace text with an image -->
+    <img src="chatbot-logo.png" alt="Chatbot Logo" id="chatbotLogo" />
+       
+  </header>
+
+  <div id="chatbox">
+    <p></p>
+<label for="modelSelect">Model:</label>
+<select id="modelSelect">
+  <option value="openai">OpenAI (GPT)</option>
+  <option value="claude">Claude</option>
+  <option value="qwen">Qwen</option>
+  <option value="qwen-coder">Qwen-Coder</option>
+  <option value="mistral">Mistral</option>
+  <option value="unity">Unity</option>
+  <option value="midjourney">Midjourney</option>
+  <option value="rtist">Rtist</option>
+  <option value="searchgpt">SearchGPT</option>
+  <option value="evil">Evil</option>
+  <option value="p1">P1</option>
+  <option value="deepseek">DeepSeek</option>
+  <option value="llamalight">LlamaLight</option>
+</select>
+  </div>
+
+  <div class="input-container">
     
-    <div class="container">
-        <textarea id="inputText" placeholder="Enter text with sentences..."></textarea>
-        <button id="splitButton">Split Sentences</button>
-    </div>
+    <button id="saveChatBtn" onclick="saveChat()" aria-label="Save Chat">
+  <img src="download.png" alt="Save Chat" id="saveChatIcon" />
+</button>
     
-      <!-- Add the editable box and button -->
-    <input type="text" id="editableBox" placeholder="Enter text to paste...">
-    <button id="pasteTextButton">Paste Text</button>
-    
-    <div class="output-container" id="outputContainer">
-        <!-- Sentences will be displayed here -->
-    </div>
-    <label for="width">Image Width:</label>
-    <input type="number" id="width" value="720" min="100" step="10">
-    <label for="height">Image Height:</label>
-    <input type="number" id="height" value="720" min="100" step="10">
-    <label for="seed">Seed:</label>
-    <input type="text" id="seed" placeholder="Enter seed">
-    
-  
-    
-    <button id="fetchButton">Fetch from Internet</button>
-    <script src="script.js"></script>
+<button id="newChatBtn" onclick="startNewChat()" aria-label="New Chat">
+    <img src="new1.png" alt="New Chat" id="newChatIcon" />
+  </button>
+    <input type="text" id="promptInput" placeholder="Type your message..." />
+    <button onclick="sendMessage()">Send</button>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
