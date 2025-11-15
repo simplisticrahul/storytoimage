@@ -109,29 +109,7 @@ function appendWithDelay(text, element, delay) {
 async function getBotResponse(prompt, model) {
   
   const randomSeed = Math.floor(Math.random() * 100000000); // Generate a random seed between 0 and 99999999
-  const baseUrl = `https://text.pollinations.ai/${encodeURIComponent(prompt)}?seed=${randomSeed}&json=false&model=${model}&system=Dear assistance, I'm planning to launch a YouTube channel where I put video of  Moral Stories animation. I want you to become all Purpose story writer. 
-
-Start: generate youself
-
-ending: generate yourself
-
-Plot: genrerate logical 
-
-Don't talk about: illogical things
-
-Setting: generate yourself.
-
-word count: 3000.
-
-Format: First Write teh word count then Charcter list with gender age and then Story
-
-Writing style: story is being Narrated by Narrator and with character dialouges in between. 
-
-Point of view: Third person Narration.
-
-Suspension build-up: slow.
-
-Language: Hindi`;
+  const baseUrl = `https://text.pollinations.ai/${encodeURIComponent(prompt)}?seed=${randomSeed}&json=false&model=${model}&system=You are very helpful assistant`;
 
   try {
     const response = await fetch(baseUrl);
