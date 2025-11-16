@@ -109,7 +109,7 @@ function appendWithDelay(text, element, delay) {
 async function getBotResponse(prompt, model) {
   
   const randomSeed = Math.floor(Math.random() * 100000000); // Generate a random seed between 0 and 99999999
-  const baseUrl = `https://text.pollinations.ai/${encodeURIComponent(prompt)}?seed=${randomSeed}&json=false&model=${model}&system=You are very helpful assistant`;
+  const baseUrl = `https://text.pollinations.ai/${encodeURIComponent(prompt)}?seed=${randomSeed}&json=false&model=${model}&system=You are very helpful assistant&referrer=simplisticrahul.github.io`;
 
   try {
     const response = await fetch(baseUrl);
